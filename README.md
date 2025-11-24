@@ -133,7 +133,7 @@ deleted_dirs=$(find /var/log/airflow -type d -empty -print -delete | wc -l)
 echo "INFO: Deleted $deleted_dirs empty directories";
 ```
 
-## SYS_RETRIGGER_FAILED_DAGS
+# SYS_RETRIGGER_FAILED_DAGS
 
 `SYS_RETRIGGER_FAILED_DAGS` — это DAG, который автоматически находит и перезапускает DAG Run’ы других DAG’ов по заданным тегам и статусу. DAG помогает оперативно повторно выполнить неуспешные или успешные DAG Run’ы без ручного вмешательства.
 
