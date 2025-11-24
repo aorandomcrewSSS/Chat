@@ -74,3 +74,9 @@ left join information_schema.role_table_grants rtg
 where cl.relkind in ('r', 'v', 'm')
     and cl.relname not like '%_prt_%'
     and rtg.table_name is null;
+    
+Результат запроса имеет формат:
+(schema_name, table_name)
+
+
+
